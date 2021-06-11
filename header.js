@@ -16,5 +16,13 @@ const styles = StyleSheet.create({
         paddingTop: 28,
         backgroundColor: 'green'
 
+    },
+    title: {
+        textAlign: 'center',
+        color: '#fff',
+        fontSize: 28,
+        fontWeight: 'bold',
+
+
     }
 });
