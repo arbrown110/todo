@@ -1,13 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export default function TodoItem({item })  {
+export default function TodoItem({ item })  {
     return(
        <TouchableOpacity>
-           <Text>
+           <Text style={styles.text}>
                {item.text}
            </Text>
        </TouchableOpacity> 
     )
 }
 
+const styles = StylesSheet.create({
+    item: {
+        padding: 18,
+        marginTop: 18,
+        borderColor: '#bbb',
+        borderWidth: 1,
+        borderStyle: 'dotted',
+        borderRadius: 10
+    }
+})
