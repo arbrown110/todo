@@ -10,9 +10,21 @@ export default function AddTodo() {
     return(
         <View>
             <TextInput 
+                style={StyleSheet.input}
                 placeholder= 'What needs to be done....'
                 onChangeText={(val) => changeHandler(val)}
             />
         </View>
     )
 }
+
+
+const styles= StyleSheet.create({
+    input: {
+        marginBottom: 10,
+        paddingHorizontal: 8,
+        paddingVertical: 6,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ddd'
+    }
+})
