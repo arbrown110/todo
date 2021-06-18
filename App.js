@@ -13,6 +13,12 @@ export default function App() {
   ]);
 
 
+const pressHandler = (key) => {
+  setTodos((prevTodos) => {
+    return prevTodos.filter(todo => todo.key != key)
+  })
+}
+
   return (
     <View style={styles.container}>
       <Header />
