@@ -11,7 +11,7 @@ export default function TodoItem({ item, pressHandler })  {
     )
 }
 
-const styles = StylesSheet.create({
+const styles = StyleSheet.create({
     item: {
         padding: 18,
         marginTop: 18,
