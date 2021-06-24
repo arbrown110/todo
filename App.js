@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import Header from './header';
 import TodoItem from './todoItem';
+import AddTodo from './addTodo';
 
 
 export default function App() {
@@ -24,7 +25,7 @@ const pressHandler = (key) => {
       <Header />
       <View style={styles.content}>
 
-       {/* todo form */}
+       <AddTodo />
         <View style={styles.list}>
           <FlatList 
           data={todos}
