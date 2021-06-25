@@ -14,7 +14,7 @@ export default function AddTodo() {
                 placeholder= 'What needs to be done....'
                 onChangeText={changeHandler}
             />
-            <Button onPress={} text= 'add task'  color= 'blue'/>   
+            <Button onPress={() => console.log(text)} title= 'add task'  color= 'blue'/>   
         </View>
     )
 }
