@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TextInput, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
 
 export default function AddTodo() {
     const [text, setText] = useState('');
@@ -12,8 +12,9 @@ export default function AddTodo() {
             <TextInput 
                 style={StyleSheet.input}
                 placeholder= 'What needs to be done....'
-                onChangeText={(val) => changeHandler(val)}
+                onChangeText={changeHandler}
             />
+            <Button onPress={} text= 'add task'  color= 'blue'/>   
         </View>
     )
 }
