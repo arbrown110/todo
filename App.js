@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Alert } from 'react-native';
 import Header from './header';
 import TodoItem from './todoItem';
 import AddTodo from './addTodo';
@@ -21,12 +21,19 @@ const pressHandler = (key) => {
 }
 
 const submitHandler = (text) => {
-  setTodos( (prevTodos) => {
-    return [
-      {text: text, key: Math.random().toString() },
-      ...prevTodos
-    ]
-  })
+
+  if(text.length > 5){
+
+    setTodos( (prevTodos) => {
+      return [
+        {text: text, key: Math.random().toString() },
+        ...prevTodos
+      ];
+    });
+  } else{
+    Alert.alert('HOLDUP!!', 'Todo must be atlest 5 characters long', [ {text: 'mmkay', onPress:() => console.log('alert close')}
+    ])
+  }
 }
 
   return (
