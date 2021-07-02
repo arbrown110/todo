@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, Alert, TouchableNativeFeedback, Keyboard } from 'react-native';
+import { StyleSheet, Text, View, FlatList, Alert, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Header from './header';
 import TodoItem from './todoItem';
 import AddTodo from './addTodo';
@@ -37,6 +37,7 @@ const submitHandler = (text) => {
 }
 
   return (
+    <TouchableWithoutFeedback>
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
@@ -52,6 +53,7 @@ const submitHandler = (text) => {
         </View>
       </View>
     </View>
+    </TouchableWithoutFeedback>
   );
 }
 
