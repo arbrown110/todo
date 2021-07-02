@@ -38,7 +38,7 @@ const submitHandler = (text) => {
 
   return (
     <TouchableWithoutFeedback onPress={() => {
-      
+      console.log('leave me')
     }}>
       <View style={styles.container}>
         <Header />
