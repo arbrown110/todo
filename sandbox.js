@@ -3,14 +3,17 @@ import {StyleSheet, Text, View } from 'react-native';
 
 
 
-export default  function Sandbox (){
-    return() {
-        return (
-            <div>
+export default  function Sandbox() {
+    return( 
+        
+        <Text>
                 
-            </div>
-        )
-    }
+         </Text>
+    )
 }
+
+const styles = StyleSheet.create({
+
+});
 
 
