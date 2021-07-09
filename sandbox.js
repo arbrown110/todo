@@ -44,3 +44,4 @@ const styles = StyleSheet.create({
 });
 
 
+// using flex will take of space aka the size . making one bigger than the other

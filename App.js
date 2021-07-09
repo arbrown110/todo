@@ -38,27 +38,27 @@ const submitHandler = (text) => {
 }
 
   return (
-    <Sandbox />
-    // <TouchableWithoutFeedback onPress={() => {
-    //   Keyboard.dimiss();
-    //   console.log('leave me')
-    // }}>
-    //   <View style={styles.container}>
-    //     <Header />
-    //     <View style={styles.content}>
+    // <Sandbox />
+    <TouchableWithoutFeedback onPress={() => {
+      Keyboard.dimiss();
+      console.log('leave me')
+    }}>
+      <View style={styles.container}>
+        <Header />
+        <View style={styles.content}>
 
-    //     <AddTodo submitHandler= {submitHandler}/>
-    //       <View style={styles.list}>
-    //         <FlatList 
-    //         data={todos}
-    //         renderItem={({ item }) => (
-    //           <TodoItem item={item} pressHandler={pressHandler} />
-    //         )}
-    //         />
-    //       </View>
-    //     </View>
-    //   </View>
-    // </TouchableWithoutFeedback>
+        <AddTodo submitHandler= {submitHandler}/>
+          <View style={styles.list}>
+            <FlatList 
+            data={todos}
+            renderItem={({ item }) => (
+              <TodoItem item={item} pressHandler={pressHandler} />
+            )}
+            />
+          </View>
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
   );
 }
 
