@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
         // flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
+        alignItems: 'flex-end',
         paddingTop: 50,
         backgroundColor: '#ddd',
     },
@@ -29,15 +30,15 @@ const styles = StyleSheet.create({
     },
     boxTwo: {
         backgroundColor: 'blue',
-        padding: 10,
+        padding: 30,
     },
     boxThree: {
         backgroundColor: 'violet',
-        padding: 10,
+        padding: 20,
     },
     boxFour: {
         backgroundColor: 'gold',
-        padding: 10,
+        padding: 40,
     },        
     
 });
