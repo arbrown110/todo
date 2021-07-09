@@ -20,7 +20,24 @@ const styles = StyleSheet.create({
         flex: 1,
         paddingTop: 50,
         backgroundColor: '#ddd',
-    }
+    },
+    boxOne: {
+        backgroundColor: 'green',
+        padding: 10,
+    },
+    boxTwo: {
+        backgroundColor: 'blue',
+        padding: 10,
+    },
+    boxThree: {
+        backgroundColor: 'violet',
+        padding: 10,
+    },
+    boxFour: {
+        backgroundColor: 'gold',
+        padding: 10,
+    },        
+    
 });
 
 
