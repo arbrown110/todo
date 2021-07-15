@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
-import {  Material } from '@expo/vector-icons';
+import {  MaterialIcons } from '@expo/vector-icons';
 
 export default function TodoItem({ item, pressHandler })  {
     return(
-       <TouchableOpacity onPress={() => pressHandler()}>
+       <TouchableOpacity onPress={() => pressHandler(item.key)}>
+           <view style={styles.item}>
+
+           </view>
            <Text style={styles.item}>
                {item.text}
            </Text>
