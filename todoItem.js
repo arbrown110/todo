@@ -6,11 +6,11 @@ export default function TodoItem({ item, pressHandler })  {
     return(
        <TouchableOpacity onPress={() => pressHandler(item.key)}>
            <view style={styles.item}>
-
-           </view>
+            <MaterialIcons />
            <Text style={styles.item}>
                {item.text}
            </Text>
+           </view>
        </TouchableOpacity> 
     )
 }
